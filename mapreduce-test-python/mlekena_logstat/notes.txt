@@ -1,0 +1,2 @@
+My attempt at regex for ipv6
+(?P<ip>[\d|\w]+.[\d|\w]+.[\d|\w]+.[\d|\w]+[.[\d|\w]+.[\d|\w]+.[\d|\w]+.[\d|\w]+.[\d|\w]+]?).*?\d{4}:(?P<hour>\d{2}):\d{2}.*?
