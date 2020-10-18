@@ -1,0 +1,38 @@
+Starting namenodes on [winnie-1.c.valid-ship-289522.internal]
+winnie-1.c.valid-ship-289522.internal: starting namenode, logging to /usr/local/hadoop-2.9.2/logs/hadoop-root-namenode-winnie-1.out
+localhost: starting datanode, logging to /usr/local/hadoop-2.9.2/logs/hadoop-root-datanode-winnie-1.out
+Starting secondary namenodes [0.0.0.0]
+0.0.0.0: starting secondarynamenode, logging to /usr/local/hadoop-2.9.2/logs/hadoop-root-secondarynamenode-winnie-1.out
+starting yarn daemons
+starting resourcemanager, logging to /usr/local/hadoop-2.9.2/logs/yarn-root-resourcemanager-winnie-1.out
+localhost: starting nodemanager, logging to /usr/local/hadoop-2.9.2/logs/yarn-root-nodemanager-winnie-1.out
+starting historyserver, logging to /usr/local/hadoop-2.9.2/logs/mapred-root-historyserver-winnie-1.out
+Safe mode is OFF
+packageJobJar: [../../big_data_projects/homework1/mapper.py, ../../big_data_projects/homework1/reducer.py, /tmp/hadoop-unjar7012254912695406800/] [] /tmp/streamjob4586830107442034868.jar tmpDir=null
+Found 2 items
+-rw-r--r--   2 root supergroup          0 2020-10-18 16:22 /homework1/output/_SUCCESS
+-rw-r--r--   2 root supergroup        195 2020-10-18 16:22 /homework1/output/part-00000
+###################### RESULTS #############################
+03:00	2001:470	41
+03:00	180.120.193.126	13
+03:00	186.11.5.195	11
+04:00	2001:470	24
+04:00	114.223.54.184	17
+04:00	117.136.87.142	11
+05:00	2001:470	18
+05:00	222.222.117.244	7
+05:00	183.92.251.43	6
+############################################################
+Deleted /homework1/input
+Deleted /homework1/output
+Stopping namenodes on [winnie-1.c.valid-ship-289522.internal]
+winnie-1.c.valid-ship-289522.internal: stopping namenode
+localhost: stopping datanode
+Stopping secondary namenodes [0.0.0.0]
+0.0.0.0: stopping secondarynamenode
+stopping yarn daemons
+stopping resourcemanager
+localhost: stopping nodemanager
+localhost: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+no proxyserver to stop
+stopping historyserver
