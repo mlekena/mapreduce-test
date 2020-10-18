@@ -23,12 +23,11 @@ def convert_to_hour_range(input_range):
 
 def in_range(x, the_range):
     return True if x >= the_range[0] and x <= the_range[1] else False
-g = '0'
+
 if len(sys.argv) > 2:
     assert(false), "To many command arguments passed in"
 hour_range = None if len(sys.argv) == 1 else convert_to_hour_range(sys.argv[1])
-if not hour_range:
-    g = '8'
+
 pat = re.compile('(?P<ip>\d+.\d+.\d+.\d+).*?\d{4}:(?P<hour>\d{2}):\d{2}.*? ')
 for line in sys.stdin:
     match = pat.search(line)
@@ -37,10 +36,10 @@ for line in sys.stdin:
             try:
                 h = int(match.group('hour'))
                 if in_range(h, hour_range):
-                    print ('%s\t%s' % ('[' + match.group('hour') + ':09' + ']' + match.group('ip'), 1))
+                    print ('%s\t%s' % ('[' + match.group('hour') + ':00' + ']' + match.group('ip'), 1))
                    
             except ValueError:
 		error_print("hour conversion failure: ", match.group('hour'))
                 pass
         else:       
-            print('%s\t%s' % ('[' + match.group('hour') + ':0{}'.format(g)+ ']' + match.group('ip'), 1))
+            print('%s\t%s' % ('[' + match.group('hour') + ':00' + ']' + match.group('ip'), 1))
