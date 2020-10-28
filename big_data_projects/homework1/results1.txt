@@ -1,0 +1,88 @@
+Starting namenodes on [winnie-1.c.valid-ship-289522.internal]
+winnie-1.c.valid-ship-289522.internal: starting namenode, logging to /usr/local/hadoop-2.9.2/logs/hadoop-root-namenode-winnie-1.out
+localhost: starting datanode, logging to /usr/local/hadoop-2.9.2/logs/hadoop-root-datanode-winnie-1.out
+Starting secondary namenodes [0.0.0.0]
+0.0.0.0: starting secondarynamenode, logging to /usr/local/hadoop-2.9.2/logs/hadoop-root-secondarynamenode-winnie-1.out
+starting yarn daemons
+starting resourcemanager, logging to /usr/local/hadoop-2.9.2/logs/yarn-root-resourcemanager-winnie-1.out
+localhost: starting nodemanager, logging to /usr/local/hadoop-2.9.2/logs/yarn-root-nodemanager-winnie-1.out
+starting historyserver, logging to /usr/local/hadoop-2.9.2/logs/mapred-root-historyserver-winnie-1.out
+Safe mode is OFF
+packageJobJar: [../../big_data_projects/homework1/mapper.py, ../../big_data_projects/homework1/reducer.py, /tmp/hadoop-unjar3501401551115575383/] [] /tmp/streamjob7878786309830905358.jar tmpDir=null
+Found 2 items
+-rw-r--r--   2 root supergroup          0 2020-10-18 16:19 /homework1/output/_SUCCESS
+-rw-r--r--   2 root supergroup       1281 2020-10-18 16:19 /homework1/output/part-00000
+###################### RESULTS #############################
+00:00	2001:470	47
+00:00	117.136.3.155	20
+00:00	60.181.12.71	14
+01:00	2001:470	30
+01:00	61.243.46.80	12
+01:00	14.205.143.146	9
+02:00	2001:470	48
+02:00	189.217.123.97	11
+02:00	183.212.169.186	11
+03:00	2001:470	41
+03:00	180.120.193.126	13
+03:00	186.11.5.195	11
+04:00	2001:470	24
+04:00	114.223.54.184	17
+04:00	117.136.87.142	11
+05:00	2001:470	18
+05:00	222.222.117.244	7
+05:00	183.92.251.43	6
+06:00	2001:470	17
+06:00	60.169.167.2	14
+06:00	117.136.126.249	14
+07:00	60.181.12.71	45
+07:00	2001:470	26
+07:00	223.39.191.108	14
+08:00	115.28.107.92	537
+08:00	2001:470	64
+08:00	117.19.128.115	12
+09:00	2001:470	48
+09:00	117.136.54.110	31
+09:00	182.32.31.226	13
+10:00	2001:470	62
+10:00	104.248.214.165	16
+10:00	111.166.210.222	16
+11:00	2001:470	75
+11:00	117.136.94.194	18
+11:00	221.192.180.52	15
+12:00	2001:470	56
+12:00	123.194.161.13	17
+12:00	112.17.236.217	12
+13:00	2001:470	69
+13:00	223.38.63.221	31
+13:00	111.37.24.188	13
+14:00	2001:470	63
+14:00	117.136.66.172	19
+14:00	112.86.251.168	17
+15:00	2001:470	79
+15:00	117.136.100.79	18
+15:00	117.136.25.187	17
+16:00	2001:470	80
+16:00	101.99.42.219	22
+16:00	212.39.89.144	16
+17:00	2001:470	21
+17:00	45.74.80.187	11
+17:00	103.233.54.253	7
+26:00	2019:08:26:16	1
+47:00	2019:10:47:20	1
+52:00	2019:14:52:43	1
+55:00	2019:15:55:02	1
+58:00	2019:11:58:44	1
+############################################################
+Deleted /homework1/input
+Deleted /homework1/output
+Stopping namenodes on [winnie-1.c.valid-ship-289522.internal]
+winnie-1.c.valid-ship-289522.internal: stopping namenode
+localhost: stopping datanode
+Stopping secondary namenodes [0.0.0.0]
+0.0.0.0: stopping secondarynamenode
+stopping yarn daemons
+stopping resourcemanager
+localhost: stopping nodemanager
+localhost: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+no proxyserver to stop
+stopping historyserver
