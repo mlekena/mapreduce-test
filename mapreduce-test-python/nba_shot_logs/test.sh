@@ -7,15 +7,15 @@ OUT_HADOOP_OUTPUT_PATH="/${PROJECT_NAME}/output/"
 
 ../../start.sh
 /usr/local/hadoop/bin/hdfs dfs -rm -r $IN_HADOOP_INPUT_PATH
-/usr/local/hadoop/bin/hdfs dfs -rm -r ${OUT_HADOOP_OUTPUT_PATH}
+/usr/local/hadoop/bin/hdfs dfs -rm -r $OUT_HADOOP_OUTPUT_PATH
 /usr/local/hadoop/bin/hdfs dfs -mkdir -p $IN_HADOOP_INPUT_PATH
 /usr/local/hadoop/bin/hdfs dfs -copyFromLocal DATA_FILE_PATH $IN_HADOOP_INPUT_PATH
 /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
 -file ../../mapreduce-test-python/mlekena_logstat/mapper.py -mapper ../../mapreduce-test-python/mlekena_logstat/mapper.py \
 -file ../../mapreduce-test-python/mlekena_logstat/reducer.py -reducer ../../mapreduce-test-python/mlekena_logstat/reducer.py \
--input $IN_HADOOP_INPUT_PATH* -output ${OUT_HADOOP_OUTPUT_PATH}
+-input $IN_HADOOP_INPUT_PATH* -output $OUT_HADOOP_OUTPUT_PATH
 
-/usr/local/hadoop/bin/hdfs dfs -ls ${OUT_HADOOP_OUTPUT_PATH}
+/usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
 echo "############################################################" 
 /usr/local/hadoop/bin/hdfs dfs -cat ${OUT_HADOOP_OUTPUT_PATH}part-00000
 echo "############################################################" 
