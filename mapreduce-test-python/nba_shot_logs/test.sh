@@ -12,6 +12,7 @@ REDUCER_ONE_PATH="./reducer.py"
 /usr/local/hadoop/bin/hdfs dfs -rm -r $OUT_HADOOP_OUTPUT_PATH
 /usr/local/hadoop/bin/hdfs dfs -mkdir -p $IN_HADOOP_INPUT_PATH
 /usr/local/hadoop/bin/hdfs dfs -copyFromLocal $DATA_FILE_PATH $IN_HADOOP_INPUT_PATH
+/usr/local/hadoop/bin/hdfs dfs -ls $IN_HADOOP_INPUT_PATH
 /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
 -file $MAPPER_ONE_PATH -mapper $MAPPER_ONE_PATH \
 -file $REDUCER_ONE_PATH -reducer $REDUCER_ONE_PATH \
@@ -23,6 +24,6 @@ echo "############################################################"
 echo "############################################################" 
 echo "I AM ABOUT TO DRY RUN REMOVING FILES FROM THE OUTPUT SCRIPT"
 echo "LETS PRINT THE FILES INSTEAD"
-/usr/local/hadoop/bin/hdfs dfs -rm -r $IN_HADOOP_OUTPUT_PATH
+/usr/local/hadoop/bin/hdfs dfs -rm -r $IN_HADOOP_INPUT_PATH
 /usr/local/hadoop/bin/hdfs dfs -rm -r ${OUT_HADOOP_OUTPUT_PATH}
 ../../stop.sh
