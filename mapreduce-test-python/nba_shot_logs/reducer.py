@@ -24,6 +24,6 @@ def main():
         if player == EMPTY:
             player = player_attempt[0]
         
-    print("{};{}".format(player, missed_attempts/attempts))
+    print("{}\t{}".format(player, missed_attempts/attempts))
 if __name__ == "__main__":
     main()
