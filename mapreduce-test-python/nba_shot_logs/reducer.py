@@ -17,7 +17,7 @@ def main():
     EMPTY = ""
     player = EMPTY
     for linein in sys.stdin:
-        player_attempt = linein.split(';')
+        player_attempt = linein.split('\t')
         print(player_attempt[1].strip())
         missed_attempts += 1 if player_attempt[1].strip() == 'missed' else 0
         attempts += 1

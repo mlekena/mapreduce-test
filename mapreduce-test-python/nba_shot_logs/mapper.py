@@ -22,7 +22,7 @@ def main():
         line.strip()
         match = pattern_m.search(line)
         if match:
-            print("{};{}".format(match.group('n_defender'),match.group('shot_made')))
+            print("{}\t{}".format(match.group('n_defender'),match.group('shot_made')))
 
 if __name__ == "__main__":
     main()
