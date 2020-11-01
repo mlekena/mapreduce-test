@@ -16,7 +16,7 @@ REDUCER_ONE_PATH="./reducer.py"
 /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
 -file $MAPPER_ONE_PATH -mapper $MAPPER_ONE_PATH \
 -file $REDUCER_ONE_PATH -reducer $REDUCER_ONE_PATH \
--input $IN_HADOOP_INPUT_PATH* -output $OUT_HADOOP_OUTPUT_PATH
+-input $IN_HADOOP_INPUT_PATH -output $OUT_HADOOP_OUTPUT_PATH
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
 echo "############################################################" 
