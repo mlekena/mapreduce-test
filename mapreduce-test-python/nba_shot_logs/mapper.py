@@ -8,8 +8,6 @@ input type to output type
 """
 import re
 import sys
-import csv
-
 
 def main():
     # Given expected input data, pattern has a runtime of 0ms... nice right!!
@@ -22,7 +20,8 @@ def main():
         line.strip()
         match = pattern_m.search(line)
         if match:
-            print("{}\t{}".format(match.group('n_defender'),match.group('shot_made')))
+            n_defender = ''.join(match.group('n_defender').split(" "))
+            print("{}\t{}".format(n_defender, match.group('shot_made')))
 
 if __name__ == "__main__":
     main()
