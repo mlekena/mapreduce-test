@@ -10,20 +10,23 @@ fear_factor = missed_shots/total_shot_attempts
 import re
 import sys
 import csv
+from operator import itemgetter
 
 def main():
-    attempts = 0
-    missed_attempts = 0
-    EMPTY = ""
-    player = EMPTY
+    
+    player_fearscore = {}
     for linein in sys.stdin:
         player_attempt = linein.split('\t')
-        print(player_attempt[1].strip())
-        missed_attempts += 1 if player_attempt[1].strip() == 'missed' else 0
-        attempts += 1
-        if player == EMPTY:
-            player = player_attempt[0]
-        
-    print("{}\t{}".format(player, missed_attempts/attempts))
+        player = player_attempt[0]
+        player.strip()
+        player_data = player_fearscore.get(player, [0, 0])
+        player_data[0] += 1 if player_attempt[1].strip() == 'missed' else 0
+        player_data[1] += 1
+        player_fearscore[player] = player_data
+    player_scores = list(map(lambda p_fs: (p_fs[0], p_fs[1][0]/p_fs[1][1]), player_fearscore.items()))
+
+    player_scores.sort(reversed=True, key=itemgetter(1)) 
+    print("{}\t{}".format(*player_scores[0])
+
 if __name__ == "__main__":
     main()
