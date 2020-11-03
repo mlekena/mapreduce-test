@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Running NBA Shot Log Analysis"
-DATA_FILE_PATH="_test_data.csv"
+DATA_FILE_PATH="test_data.csv"
 PROJECT_NAME="nbashotlog"
 IN_HADOOP_INPUT_PATH="/${PROJECT_NAME}/input/"
 OUT_HADOOP_OUTPUT_PATH="/${PROJECT_NAME}/output/"
