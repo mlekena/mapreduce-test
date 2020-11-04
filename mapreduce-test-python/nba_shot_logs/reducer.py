@@ -27,7 +27,16 @@ def main():
 
     player_scores.sort( key=itemgetter(1))
     player_scores.reverse()
-    print("{}\t{}".format(*player_scores[0]))
+    highest_rate = player_scores[0][1]
+    top_fear_scorers = list()
+    for pfs in player_scores:
+        if pfs[1] < highest_rate:
+            break
+        top_fear_scorers.append((pfs, *player_fearscore[pfs[0]]))
+    top_fear_scorers.sort(key=itemgetter(1))
+    top_fear_scorers.reverse()
+    # print(top_fear_scorers)    
+    print("{}\t{}".format(*top_fear_scorers[0][0]))
 
 if __name__ == "__main__":
     main()
