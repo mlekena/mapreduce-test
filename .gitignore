@@ -2,3 +2,4 @@ workers
 manager
 .vscode
 .venv
+uncommitted_data
