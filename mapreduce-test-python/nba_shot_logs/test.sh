@@ -21,6 +21,7 @@ REDUCER_ONE_PATH="./reducer.py"
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
 echo "############################################################" 
 /usr/local/hadoop/bin/hdfs dfs -cat ${OUT_HADOOP_OUTPUT_PATH}part-00000
+echo "This player the above fear score of "shots_made_near"/"total_shots_made_near"
 echo "############################################################" 
 echo "PRINTING THE FILES"
 /usr/local/hadoop/bin/hdfs dfs -rm -r $IN_HADOOP_INPUT_PATH
