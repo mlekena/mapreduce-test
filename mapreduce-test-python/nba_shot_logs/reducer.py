@@ -25,8 +25,9 @@ def main():
         player_fearscore[player] = player_data
     player_scores = list(map(lambda p_fs: (p_fs[0], p_fs[1][0]/p_fs[1][1]), player_fearscore.items()))
 
-    player_scores.sort(reversed=True, key=itemgetter(1)) 
-    print("{}\t{}".format(*player_scores[0])
+    player_scores.sort( key=itemgetter(1))
+    player_scores.reverse()
+    print("{}\t{}".format(*player_scores[0]))
 
 if __name__ == "__main__":
     main()
