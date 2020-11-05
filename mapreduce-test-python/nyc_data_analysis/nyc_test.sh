@@ -1,6 +1,7 @@
 #!/bin/sh
 echo "Running Parking Violations Log Analysis -- When"
-DATA_FILE_PATH="Parking_Violations_Issued_-_Fiscal_Year_2021.csv"
+#DATA_FILE_PATH="Parking_Violations_Issued_-_Fiscal_Year_2021.csv"
+DATA_FILE_PATH="test_data.csv"
 PROJECT_NAME="Project1Tix"
 IN_HADOOP_INPUT_PATH="/${PROJECT_NAME}/input/"
 OUT_HADOOP_OUTPUT_PATH="/${PROJECT_NAME}/output/"
