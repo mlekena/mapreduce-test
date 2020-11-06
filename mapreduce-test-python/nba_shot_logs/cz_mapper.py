@@ -22,28 +22,33 @@ PLAYERFIRSTINDEX = 19 + OFF_SET + 1
 SHOTRESULTINDEX = 13 + OFF_SET #before defender
 EMPTY_FIELD = ""
 # c = 5
-for line in sys.stdin:
-    line.strip()
-    sline = line.split(',')
-    if sline[0] == "GAME_ID":
-        continue
-    # print(" # ".join(sline))
-    # print(len(sline))
-    selected_fields = [sline[PLAYERFIRSTINDEX], sline[SHOTDISTINDEX],
-                                    sline[CLOSEDEFDISTINDEX], sline[SHOTCLOCKINDEX],
-                                    sline[SHOTRESULTINDEX]]
-    """Here we have made a decision to invalidate any row with missing data."""
-    skip_row = False
-    for field in selected_fields:
-        if field == EMPTY_FIELD:
-            skip_row = True
-            break
+def main():
+    for line in sys.stdin:
+        line.strip()
+        sline = line.split(',')
+        if sline[0] == "GAME_ID":
+            continue
+        if len(sline) != 23:
+            continue
+        # print(" # ".join(sline))
+        # print(len(sline))
+        selected_fields = [sline[PLAYERFIRSTINDEX], sline[SHOTDISTINDEX],
+                                        sline[CLOSEDEFDISTINDEX], sline[SHOTCLOCKINDEX],
+                                        sline[SHOTRESULTINDEX]]
+        """Here we have made a decision to invalidate any row with missing data."""
+        skip_row = False
+        for field in selected_fields:
+            if field == EMPTY_FIELD:
+                skip_row = True
+                break
 
-    if skip_row:
-        continue
+        if skip_row:
+            continue
 
-    print("{};{};{};{}\t{}".format(*selected_fields))
+        print("{};{};{};{}\t{}".format(*selected_fields))
 
+if __name__ == "__main__":
+    main()
     # if c < 0:
     #     break
     # c -= 1
