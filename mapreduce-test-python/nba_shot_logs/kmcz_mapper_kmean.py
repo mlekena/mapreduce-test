@@ -22,19 +22,28 @@ def euc_dist(lhs, rhs):
         )
     return math.sqrt(sum_under)
 
+def to_numbers(candidates):
+    try:
+        the_converted = list(map(lambda s: float(s), candidates))
+        return the_converted
+    except ValueError:
+        print("BAD INPUT: {}".format(candidates))
+        exit("Failed to convert integers. Terminating exceptional path.")
+
 
 def main():
     for line in sys.stdin:
         line.strip()
         sline = line.split('\t')
         player = sline[0].strip()
-        zone = sline[1].strip()
-        kzones = sline[2].strip().split('|')
-
+        zone = to_numbers(sline[1].strip().split(';'))
+        kzones_raw = sline[2].strip().split('|')
+        kzone = list(map(lambda kzone: to_numbers(kzone.split(',')), kzones_raw))
+        # kzone
 
 
         # print("{}\t{};{};{}".format(*selected_fields))
 
 if __name__ == "__main__":
-    print("{} = {}".format(euc_dist([-1, 2,3], [4,0,-3]), math.sqrt(65)))
-    # main()
+    # print("{} = {}".format(euc_dist([-1, 2,3], [4,0,-3]), math.sqrt(65)))
+    main()
