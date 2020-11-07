@@ -6,7 +6,7 @@
 
 from __future__ import print_function
 import sys
-punc='!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+punc = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
 
 
 for line in sys.stdin:
@@ -18,8 +18,7 @@ for line in sys.stdin:
     if Type == "":
         Type = "NoTy"
     Type = Type.upper()
-    match = Year+','+ Type
-    print ('%s\t%s' % (match,1))
-    print ('%s\t%s' % (Year,1))
-    print ('%s\t%s' % (Type,1))
-
+    match = Year+',' + Type
+    print('%s\t%s' % (match, 1))
+    print('%s\t%s' % (Year, 1))
+    print('%s\t%s' % (Type, 1))

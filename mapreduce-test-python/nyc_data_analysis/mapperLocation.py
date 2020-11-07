@@ -11,7 +11,6 @@ import sys
 for line in sys.stdin:
     line = line.split(',')
     Location = line[24]
-    if Location == "": 
+    if Location == "":
         Location = "no_location"
-    print ('%s\t%s' % (Location,1))
-
+    print('%s\t%s' % (Location, 1))

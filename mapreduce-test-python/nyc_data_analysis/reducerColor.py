@@ -19,12 +19,14 @@ for line in sys.stdin:
     except ValueError:
         pass
 
-def arrange(x,y,k=10):
-    l1=len(x)
-    k=k-l1
+
+def arrange(x, y, k=10):
+    l1 = len(x)
+    k = k-l1
     return str(x)+" "*k+str(y)
 
-sorted_dict_color_count = sorted(dict_color_count.items(), key=itemgetter(1), reverse = True)
-for color, count in sorted_dict_color_count[:200]:
-     print (arrange(color, count))
 
+sorted_dict_color_count = sorted(
+    dict_color_count.items(), key=itemgetter(1), reverse=True)
+for color, count in sorted_dict_color_count[:200]:
+    print(arrange(color, count))

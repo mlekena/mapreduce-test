@@ -14,18 +14,20 @@ for line in sys.stdin:
     location, num = line.split('\t')
     try:
         num = int(num)
-        dict_location_count[location] = dict_location_count.get(location, 0) + num
+        dict_location_count[location] = dict_location_count.get(
+            location, 0) + num
 
     except ValueError:
         pass
 
-def arrange(x,y,k=30):
-    l1=len(x)
-    k=k-l1
+
+def arrange(x, y, k=30):
+    l1 = len(x)
+    k = k-l1
     return str(x)+" "*k+str(y)
 
 
-sorted_dict_location_count = sorted(dict_location_count.items(), key=itemgetter(1), reverse = True)
-for location, count in sorted_dict_location_count[0:500]: 
-     print arrange(location, count)
-
+sorted_dict_location_count = sorted(
+    dict_location_count.items(), key=itemgetter(1), reverse=True)
+for location, count in sorted_dict_location_count[0:500]:
+    print arrange(location, count)
