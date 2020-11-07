@@ -21,5 +21,5 @@ for line in sys.stdin:
 
 sorted_dict_tix_count = sorted(dict_tix_count.items(), key=itemgetter(1), reverse = True)
 for time, count in sorted_dict_tix_count[0:500]: 
-     print( '%s\t%s' % (time, count))
+     print '%s\t%s' % (time, count)
 

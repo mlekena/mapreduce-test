@@ -19,8 +19,13 @@ for line in sys.stdin:
     except ValueError:
         pass
 
+def arrange(x,y,k=30):
+    l1=len(x)
+    k=k-l1
+    return str(x)+" "*k+str(y)
+
 
 sorted_dict_location_count = sorted(dict_location_count.items(), key=itemgetter(1), reverse = True)
 for location, count in sorted_dict_location_count[0:500]: 
-     print '%s\t%s' % (location, count)
+     print arrange(location, count)
 

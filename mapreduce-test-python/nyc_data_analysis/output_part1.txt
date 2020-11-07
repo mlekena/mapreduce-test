@@ -1,0 +1,1047 @@
+####################################################################
+
+### OUTPUT FOR PART 1       Modupe Lekena, Dylan Smith, Suzanne Zhen
+
+####################################################################
+####################################################################
+
+### PART 1.1 Hours
+
+0800P	404752
+1000P	372403
+0800A	358717
+0900A	343402
+1100A	333077
+1200P	311967
+1000A	302169
+0300P	240996
+0700A	237714
+0400P	214524
+0500P	185430
+0600A	140939
+0600P	140722
+0700P	100608
+0900P	85920
+0500A	22492
+1200A	15842
+1100P	13388
+0300A	7783
+0400A	5122
+misrecorded	4
+############################################################
+
+############################################################
+
+### PART 1.2 Car Type and Year
+
+NoYr,4DSD      265105         SUBN      1542442        NoYr      750303    	
+NoYr,SUBN      255885         4DSD      1121023        2019      405096    	
+2019,SUBN      195446         VAN       362277         2018      336904    	
+2018,SUBN      169062         DELV      111558         2017      283605    	
+2020,SUBN      135806         PICK      107375         2020      264043    	
+2017,SUBN      118258         2DSD      88337          2016      231562    	
+2017,4DSD      85051          UT        80382          2015      209873    	
+2019,4DSD      84174          SDN       67560          2014      157757    	
+2016,SUBN      82985          SD        57801          2013      152254    	
+2018,4DSD      82384          4D        27320          2012      125092    	
+2015,SUBN      78354          SW        22728          2011      116138    	
+2016,4DSD      70445          REFG      21741          2007      107683    	
+2015,4DSD      66966          CONV      19802          2008      107032    	
+2014,SUBN      58147          TRAC      18723          2010      96080     	
+NoYr,VAN       53447          MCY       17281          2006      92610     	
+2013,SUBN      52025          4S        15050          2009      85524     	
+NoYr,DELV      51477          UTIL      11384          2005      75986     	
+2013,4DSD      51076          TRLR      10555          2004      67393     	
+2014,4DSD      50161          TAXI      10103          2003      50397     	
+2020,4DSD      49785          NOTY      10000          2002      36927     	
+2011,SUBN      46137          PK        8068           2001      27961     	
+2012,SUBN      46014          TK        7311           1999      14605     	
+2008,SUBN      42499          PV        7263           1998      11120     	
+2012,4DSD      39229          CG        6829           1997      9691      	
+2007,SUBN      38835          MP        6491           1995      4258      	
+2019,VAN       37316          CP        6211           1996      4126      	
+2010,SUBN      36295          HB        5870           2021      2925      	
+2006,SUBN      36019          SU        5190           1994      1904      	
+2010,4DSD      34262          VN        4099           1993      1598      	
+2011,4DSD      33772          BUS       3504           1992      1314      	
+2017,VAN       33460          FLAT      3366           1991      950       	
+2005,SUBN      32800          SEDN      3061           1990      944       	
+2007,4DSD      32251          ST        3013           1988      725       	
+2016,VAN       31581          DUMP      2890           1989      718       	
+2008,4DSD      31261          LL        2597           1987      576       	
+2009,4DSD      30587          CV        2438           1985      322       	
+2018,VAN       30427          TR/C      2433           1986      274       	
+2009,SUBN      29005          WG        2339           1984      235       	
+2004,SUBN      28685          P-U       2040           1983      141       	
+2015,VAN       25234          TRL       2003           1979      106       	
+2006,4DSD      25079          MOPD      1962           1982      94        	
+NoYr,2DSD      24472          2D        1780           1981      92        	
+2003,SUBN      21509          SEDA      1427           1980      89        	
+NoYr,PICK      20808          TRUC      1385           1976      85        	
+2005,4DSD      20585          TOW       1282           1978      72        	
+2014,VAN       17272          TRAI      1248           1972      71        	
+2004,4DSD      17237          SEMI      915            1971      69        	
+2013,VAN       17025          4W        847            1977      65        	
+NoYr,SDN       16314          4H        805            1973      59        	
+2019,UT        16040          4 DR      776            1974      54        	
+2019,PICK      15685          WAGO      711            1970      54        	
+2003,4DSD      15541          BOAT      655            2066      50        	
+2002,SUBN      15462          FOUR      654            1975      49        	
+2011,VAN       14621          2S        640            2069      48        	
+2020,UT        14419          STAK      617            2067      40        	
+NoYr,TRAC      13749          MC        571            2068      38        	
+2012,VAN       13148          PASS      502            2065      35        	
+2007,VAN       12878          4DSE      495            2022      29        	
+2002,4DSD      11148          FODO      464            2063      19        	
+2018,PICK      10808          YY        443            00        17        	
+2006,VAN       10783          TANK      428            2057      15        	
+NoYr,TRLR      10448          4DOO      402            2062      12        	
+2008,VAN       10440          5D        397            2064      12        	
+2018,UT        10371          SV        376            2056      9         	
+2020,VAN       10285          APUR      323            4         7         	
+2001,SUBN      9699           SPOR      323            2026      7         	
+2019,SD        9484           CN        304            2054      6         	
+2009,VAN       9173           CH        262            2029      5         	
+NoYr,MCY       8224           T/CR      240            10        4         	
+2020,PICK      8182           MOBL      217            2048      4         	
+2001,4DSD      8176           VEH       188            2049      4         	
+NoYr,REFG      7924           JP        165            2053      4         	
+2017,PICK      7646           H/WH      157            2055      3         	
+2005,VAN       6864           IC        157            2058      3         	
+2016,PICK      6326           SUBU      146            2025      3         	
+2017,UT        6248           MCC       135            2030      3         	
+2016,DELV      6191           TKLE      131            2060      2         	
+2020,SD        5915           PKUP      130            2061      2         	
+2018,SD        5792           CMIX      130            2045      2         	
+2004,VAN       5792           2H        122            2023      2         	
+2010,VAN       5672           HATC      122            1         2         	
+2015,PICK      5001           TLR       118            7         1         	
+2019,4D        4971           COUP      118            2052      1         	
+2020,4D        4936           TU        115            2046      1         	
+2016,UT        4926           VA        113            2044      1         	
+1999,4DSD      4843           BU        106            2041      1         	
+2017,2DSD      4775           LIM       105            2043      1         	
+2019,SDN       4746           4SLE      92             2028      1         	
+NoYr,NOTY      4477           UV        88             2036      1         	
+1999,SUBN      4473           TWOD      87             2032      1         	
+2015,2DSD      4472           2C        85        	
+2016,2DSD      4434           TR/E      83        	
+2015,UT        4432           MOT       81        	
+2017,SD        4363           TRC       75        	
+2013,2DSD      4321           MOTO      74        	
+2019,2DSD      4293           TRK       74        	
+2016,SD        4230           STAT      73        	
+2006,DELV      4086           TR        73        	
+2015,SD        4047           2 DR      68        	
+2012,2DSD      4041           3D        67        	
+2013,DELV      4037           PU        63        	
+2007,DELV      3943           O         60        	
+2008,2DSD      3873           TRAV      59        	
+2017,SDN       3852           HRSE      58        	
+2019,DELV      3847           SUV       58        	
+2018,2DSD      3806           LTRL      56        	
+2014,PICK      3712           UTPC      54        	
+1998,4DSD      3681           OM        52        	
+2016,SDN       3673           CARR      49        	
+2012,DELV      3657           CUST      48        	
+2018,SDN       3607           CHER      44        	
+2015,SDN       3590           P/SH      44        	
+2004,DELV      3551           4DR       40        	
+2020,DELV      3505           SWT       40        	
+2014,UT        3453           TT        40        	
+2014,DELV      3322           EXPE      38        	
+2017,DELV      3276           AM        38        	
+2013,SD        3257           CARG      35        	
+2014,2DSD      3240           IP        31        	
+2014,SD        3208           8V        29        	
+2012,PICK      3203           CW        29        	
+2018,DELV      3172           4 DO      26        	
+2013,SDN       3126           MS        24        	
+2013,PICK      3100           4WHE      23        	
+2008,PICK      3080           TTR       22        	
+1997,VAN       3065           ROVE      22        	
+2015,DELV      2993           CM        22        	
+2009,2DSD      2955           MOPE      21        	
+2014,SDN       2919           REF       21        	
+2010,PICK      2885           MINI      21        	
+2003,VAN       2865           STWA      20        	
+2013,UT        2820           4SRE      20        	
+2020,SDN       2803           RD        20        	
+1998,SUBN      2734           ESCA      20        	
+2010,2DSD      2685           TKRE      20        	
+2019,SW        2658           POLE      20        	
+2011,PICK      2617           RS        19        	
+2007,2DSD      2616           TAHO      19        	
+2001,VAN       2611           ON        19        	
+2020,4S        2605           2CV       19        	
+1997,4DSD      2605           ATV       18        	
+2012,SDN       2516           RD/S      18        	
+2011,UT        2486           TL        18        	
+2007,SDN       2434           MPVH      18        	
+2019,4S        2423           CON       17        	
+2008,SDN       2412           2W        16        	
+2011,2DSD      2388           YDSD      16        	
+2020,SW        2371           TRU       16        	
+2002,VAN       2340           RANG      16        	
+2012,SD        2332           4T        16        	
+2011,SDN       2332           WRAN      14        	
+2007,PICK      2312           MK        14        	
+2012,UT        2291           W/DR      14        	
+NoYr,TR/C      2280           TRA       14        	
+2006,2DSD      2257           4C        14        	
+2010,SDN       2249           TUDO      13        	
+2006,PICK      2185           A         13        	
+2020,2DSD      2181           STAW      13        	
+2019,REFG      2128           MTR       13        	
+NoYr,SEDN      2126           EXPL      13        	
+2001,DELV      2110           LM        12        	
+2011,SD        2090           PATH      12        	
+1997,SUBN      2085           S/SP      12        	
+2009,SDN       2041           Z1UT      12        	
+2004,2DSD      2015           CNVT      12        	
+2008,UT        2012           OV        12        	
+2017,REFG      2007           TRAL      11        	
+2010,SD        1917           H/TR      11        	
+2005,2DSD      1868           LIMO      11        	
+2006,SDN       1864           BOX       11        	
+2004,PICK      1857           TX        11        	
+NoYr,TRL       1855           MH        10        	
+2008,SD        1855           REFR      10        	
+2011,DELV      1847           SE        10        	
+2005,PICK      1838           4HB       10        	
+2010,UT        1822           CZ        10        	
+2010,DELV      1797           4DPC      10        	
+2005,DELV      1790           SB        9         	
+2016,4D        1763           APP       9         	
+2019,CONV      1746           5S        9         	
+2016,REFG      1744           SS        8         	
+2016,TAXI      1731           EXTS      8         	
+2020,REFG      1729           ES        8         	
+2018,4D        1725           WF        8         	
+2003,2DSD      1716           OIM       8         	
+2007,SD        1671           PC        8         	
+2015,4D        1669           BOXT      8         	
+2007,UT        1659           HV        8         	
+2018,CONV      1631           HC        8         	
+2005,SDN       1619           STNW      7         	
+2009,SD        1613           RF        7         	
+2019,TAXI      1559           MLB       7         	
+2015,TAXI      1557           COMM      7         	
+2018,SW        1522           2DOO      7         	
+2009,UT        1490           OI        7         	
+2014,4D        1487           SCOO      7         	
+2019,PK        1447           CXM       7         	
+2017,4D        1423           HR        7         	
+2020,MP        1423           AN        7         	
+2019,MCY       1420           UK        7         	
+2017,SW        1401           3S        6         	
+2009,DELV      1393           RV        6         	
+1995,VAN       1391           4SXS      6         	
+2017,CONV      1387           MC-R      6         	
+2009,PICK      1385           MODC      6         	
+1996,4DSD      1373           I         6         	
+2014,TAXI      1360           5H        6         	
+2002,2DSD      1357           5DHT      6         	
+1998,VAN       1357           M         6         	
+2013,REFG      1342           RPLC      6         	
+2016,SW        1339           SUB       6         	
+2004,SDN       1338           WAG       6         	
+2006,UT        1326           BIKE      5         	
+2006,SD        1325           COVN      5         	
+2013,4D        1290           3P        5         	
+2020,MCY       1272           BLK       5         	
+2020,NOTY      1271           DSD       5         	
+2015,SW        1265           2DSE      5         	
+2018,TAXI      1232           TKXS      5         	
+2015,REFG      1223           4 WH      5         	
+NoYr,CONV      1220           CREW      5         	
+1999,VAN       1215           PKTK      5         	
+2020,SU        1208           HTCH      5         	
+2005,UT        1208           C         5         	
+2008,DELV      1204           IM        5         	
+2019,NOTY      1203           VNLE      5         	
+2002,PICK      1198           OL        5         	
+NoYr,TRAI      1196           OS        5         	
+2003,PICK      1192           4DHT      4         	
+2003,SDN       1189           HEAR      4         	
+2021,SUBN      1187           DURA      4         	
+2019,TK        1150           EXTN      4         	
+2004,UT        1129           2HLE      4         	
+2007,SW        1128           SUW       4         	
+2020,TAXI      1124           MTRH      4         	
+2020,MOPD      1123           EC        4         	
+1995,4DSD      1120           HWH       4         	
+2005,SD        1083           C4        4         	
+1998,DELV      1081           OO        4         	
+2008,SW        1080           TC        4         	
+2008,CONV      1063           HY        4         	
+NoYr,FLAT      1051           VNXS      4         	
+2001,2DSD      1013           TN        4         	
+2019,PV        1012           AS        4         	
+2020,CONV      1012           OVI       3         	
+2015,4S        1011           CML       3         	
+2014,SW        1007           PCO       3         	
+2020,PK        998            VESP      3         	
+2019,HB        993            VT        3         	
+2020,TK        985            N/A       3         	
+2012,4D        972            ALL       3         	
+2018,REFG      969            SP        3         	
+2019,CG        962            ONO       3         	
+2016,4S        958            2Z        3         	
+2013,SW        955            DS        3         	
+2011,SW        949            RBM       3         	
+2015,CONV      938            TARI      3         	
+2006,SW        938            MOCL      3         	
+2011,4D        936            PAS       3         	
+2016,UTIL      930            PERM      3         	
+2005,SW        918            SMAR      3         	
+2020,HB        918            COM       3         	
+2018,PK        907            CB        3         	
+2016,CONV      900            FREI      3         	
+2019,MP        890            UTL       3         	
+2018,UTIL      887            IN        3         	
+NoYr,SEMI      878            AML       3         	
+1996,SUBN      864            AMC       3         	
+2002,SDN       861            SN/P      3         	
+2017,UTIL      861            OR        3         	
+2012,SW        856            SWLE      2         	
+2017,4S        852            OVM       2         	
+2019,VN        847            CMI       2         	
+2017,CG        844            CME       2         	
+2019,UTIL      838            4HLE      2         	
+2018,4S        837            MD        2         	
+2012,CONV      837            MB        2         	
+2013,CONV      836            MOPO      2         	
+2004,SW        828            FB        2         	
+1996,VAN       824            RED       2         	
+2014,CONV      820            WHT       2         	
+2008,4D        818            ORM       2         	
+2007,4D        816            LMB       2         	
+2004,SD        810            FORD      2         	
+2013,4S        809            Q         2         	
+2014,4S        802            TOWT      2         	
+2003,SD        784            L         2         	
+2010,SW        782            2F        2         	
+2007,UTIL      781            2L        2         	
+NoYr,BUS       778            XTER      2         	
+2001,PICK      774            FOUD      2         	
+2011,CONV      772            STAC      2         	
+2003,SW        772            TEMP      2         	
+2007,CONV      769            4D H      2         	
+2003,UT        763            2HT       2         	
+NoYr,UTIL      739            2HB       2         	
+2006,CONV      738            B         2         	
+NoYr,P-U       737            VNRE      2         	
+2010,4D        730            UNK       2         	
+2018,MCY       730            TRIL      2 
+############################################################
+
+############################################################
+### PART 1.3 Locations
+        	
+Broadway                      47783	
+3rd Ave                       33860	
+WB CONDUIT BLVD @ LI          25052	
+EB W 14TH STREET @ 5          24095	
+5th Ave                       23514	
+WB QUEENS BLVD @ 72N          21985	
+2nd Ave                       19594	
+Madison Ave                   19500	
+Lexington Ave                 17966	
+EB HORACE HARDING EX          17552	
+NB WEST ST @ LEROY S          15315	
+Queens Blvd                   14355	
+1st Ave                       14088	
+6th Ave                       13273	
+8th Ave                       13160	
+Jamaica Ave                   12656	
+SB WEST ST @ LEROY S          12204	
+SB FRANCIS LEWIS BLV          11975	
+WB ATLANTIC AVE @ CL          11965	
+37th Ave                      11562	
+Amsterdam Ave                 11271	
+WB E 14TH STREET @ I          11197	
+EB CONDUIT BLVD @ GL          11100	
+EB ATLANTIC AVE @ 13          10735	
+7th Ave                       10636	
+Columbus Ave                  10446	
+Park Ave                      10417	
+NB SPRINGFIELD BLVD           9769	
+WB LINDEN BLVD @ LIN          9700	
+Roosevelt Ave                 9523	
+WB GOETHALS RD N @ J          9454	
+NB FRANCIS LEWIS BLV          9330	
+NB PAGE AVE @ ACADEM          9285	
+EB ATLANTIC AVE @ ES          9154	
+NB CONEY ISLAND AVE           9010	
+Grand Concourse               8560	
+SB BAYCHESTER AVE @           8441	
+Myrtle Ave                    8408	
+NB PENNSYLVANIA AVE           8190	
+9th Ave                       8166	
+NB OCEAN PKWY @ ELMW          7904	
+White Plains Rd               7797	
+St Nicholas Ave               7777	
+W 47th St                     7735	
+EB NORTHERN BLVD @ A          7714	
+Main St                       7676	
+WB SEDGWICK AVE @ SA          7655	
+Adam Clayton Powell           7515	
+WB SEAGIRT BLVD @ CR          7428	
+SB WEST ST @ W THAME          7314	
+WB BRUCKNER BLVD @ F          7301	
+E Tremont Ave                 7284	
+SB PENNSYLVANIA AVE           7258	
+SB WOODHAVEN BLVD @           7232	
+WB W 14TH STREET @ 6          7226	
+Fulton St                     7125	
+Nostrand Ave                  6945	
+NB WEST ST @ CARLISL          6938	
+WB FORT HAMILTON PKW          6915	
+WB BRUCKNER BLVD @ B          6848	
+Northern Blvd                 6775	
+Steinway St                   6762	
+HORACE HARDING EXPWY          6711	
+WB ATLANTIC AVE @ 13          6681	
+Jerome Ave                    6618	
+EB E HOUSTON ST @ AV          6513	
+SB EASTERN PKWY @ TR          6393	
+Atlantic Ave                  6378	
+WB NORTHERN BLVD @ 2          6376	
+SB SPRINGFIELD BLVD           6308	
+SB E 80TH ST @ PAERD          6305	
+10th Ave                      6282	
+Webster Ave                   6263	
+WB HILLSIDE AVE @ 25          6174	
+Liberty Ave                   6150	
+SB LITTLE NECK PKWY           6115	
+WB ATLANTIC AVE @ SH          6050	
+SB MAIN ST @ 82ND DR          5994	
+NB 12TH AVE @ 23RD S          5971	
+WB E GUN HILL RD @ G          5921	
+Austin St                     5914	
+Coney Island Ave              5897	
+EB LINDEN BLVD @ HEM          5881	
+NB MARATHON PKWY @ T          5873	
+Metropolitan Ave              5854	
+EB E TREMONT AVE @ B          5838	
+WB HEMPSTEAD AVE @ 9          5822	
+W 37th St                     5741	
+SB 12TH AVE @ W 23RD          5733	
+EB E 233RD ST @ KATO          5669	
+EB E 14TH STREET @ U          5668	
+EB HILLSIDE AVE @ 25          5634	
+W 40th St                     5593	
+Grand St                      5580	
+EB QUEENS BLVD @ 82N          5540	
+WB LINDEN BLVD @ SCH          5526	
+NB BAYCHESTER AVE @           5482	
+W 39th St                     5438	
+WB ROCKAWAY BEACH BL          5416	
+NB MACDONOUGH PL @ D          5387	
+EB ATLANTIC AVE @ RA          5364	
+EB HOYT AVE S @ 24TH          5342	
+EB MERRICK BLVD @ 24          5297	
+SB 21ST ST @ 36TH AV          5259	
+EB LINDEN BLVD @ VER          5236	
+Flatbush Ave                  5219	
+EB HILLSIDE AVE @ MA          5185	
+SB HOWARD AVE @ E NE          5173	
+Westchester Ave               5149	
+NB OCEAN PKWY @ AVE           5107	
+EB PROSPECT ST @ WAS          5090	
+NB WEST ST @ WARREN           5089	
+EB SEAGIRT BLVD @ B           5036	
+NB RALPH AVE @ E 66T          5034	
+W 48th St                     4985	
+31st St                       4971	
+Hillside Ave                  4902	
+Greenwich St                  4890	
+EB MERRICK BLVD @ 16          4851	
+Prince St                     4807	
+W 17th St                     4795	
+NB RIVERDALE AVE @ W          4787	
+WB UNION TPKE @ 259T          4785	
+NB ROGERS AVE @ ERAS          4782	
+Bleecker St                   4699	
+W 45th St                     4647	
+SB NOSTRAND AVE @ LI          4647	
+W 43rd St                     4643	
+41st Ave                      4642	
+EB FLATLANDS AVE @ E          4616	
+Riverside Dr                  4604	
+EB LINDEN BLVD @ ROC          4563	
+WB LINDEN BLVD @ ROC          4551	
+NB WEBSTER AVE @ E 1          4472	
+39th Ave                      4418	
+30th Ave                      4418	
+ATLANTIC AVE (W/B) @          4397	
+NB AVE OF THE AMERIC          4386	
+WB SEAVIEW AVE @ MAS          4346	
+SB WEST ST @ WARREN           4330	
+W 23rd St                     4328	
+NB GUY R BREWER BLVD          4310	
+NB BAILEY AVE @ W 19          4308	
+College Point Blvd            4304	
+WB UNION TPKE @ MAIN          4295	
+NB VAN DAM ST @ 48TH          4277	
+NB RALPH AVE @ BEVER          4228	
+SB 9TH AVE @ 28TH ST          4221	
+W 38th St                     4205	
+E 10th St                     4185	
+W 27th St                     4151	
+NB FLATBUSH AVE EXT           4141	
+Church Ave                    4129	
+EB NEPTUNE AVE @ W 2          4118	
+Frederick Douglass B          4114	
+Southern Blvd                 4090	
+W 36th St                     4082	
+WB THOMSON AVE @ 30T          4079	
+Ocean Ave                     4065	
+E 86th St                     4064	
+SB BELL BLVD @ 18TH           4021	
+WB AMBOY RD @ WOODHU          4011	
+E 9th St                      4009	
+Bedford Ave                   4009	
+NB CROPSEY AVE @ 25T          3992	
+WB QUEENS BLVD @ 36T          3977	
+W 24th St                     3961	
+101st Ave                     3945	
+W 30th St                     3931	
+NB KINGS HWY @ TILDE          3926	
+SB GRAND CONCOURSE @          3909	
+WB QUEENS BLVD @ 56T          3895	
+WB FLATLANDS AVE @ E          3889	
+Manhattan Ave                 3871	
+Washington St                 3861	
+E 135TH ST (W/B) @ A          3855	
+SB MAIN ST @ 63RD AV          3843	
+89th Ave                      3827	
+W 46th St                     3822	
+NB UNIVERSITY AVE @           3779	
+W 28th St                     3767	
+E 45th St                     3752	
+Kings Hwy                     3752	
+EB E GUN HILL RD @ T          3733	
+W 41st St                     3727	
+W 26th St                     3709	
+E 13th St                     3702	
+EB 37TH ST @ FT HAMI          3682	
+EB UNION TPKE @ KENT          3670	
+NB KISSENA BLVD @ ME          3666	
+SB HOLLIS CT BLVD @           3650	
+NB BROADWAY @ W 228T          3647	
+W 33rd St                     3643	
+E 12th St                     3634	
+86th St                       3632	
+York Ave                      3625	
+W 49th St                     3597	
+Front St                      3595	
+W 125th St                    3592	
+Water St                      3592	
+NB KNAPP ST @ ALLEN           3577	
+EB ROCKAWAY BLVD @ 1          3571	
+Washington Ave                3543	
+West End Ave                  3541	
+NB BAY PKWY @ BENSON          3532	
+NB KINGS HWY @ E 94T          3517	
+E 14th St                     3511	
+SB MANOR RD @ BRIELL          3500	
+Spring St                     3473	
+NB MIDLAND PKWY @ HE          3459	
+EB QUEENS BLVD @ 35T          3432	
+Ocean Pky                     3421	
+SB BROADWAY @ 252ND           3407	
+W 52nd St                     3398	
+Avenue A                      3398	
+E 39th St                     3390	
+Junction Blvd                 3382	
+WB QUEENS BLVD @ 62N          3379	
+NB GRAND CONCOURSE @          3349	
+E 54th St                     3335	
+Hudson St                     3331	
+4th Ave                       3319	
+WB UNION TRPK @ 213T          3309	
+Mott St                       3308	
+EASTERN PKWY (W/B) @          3288	
+W 35th St                     3270	
+EB METROPOLITAN AVE           3261	
+BRUCKNER BLVD (E/B)           3225	
+WB BEACH CHANNEL DR           3222	
+W 58th St                     3216	
+EB ROCKLAND AVE @ BO          3210	
+NB FLATBUSH AVE @ DE          3206	
+E 23rd St                     3204	
+W 44th St                     3190	
+W 51st St                     3180	
+Walton Ave                    3173	
+SB RALPH AVE @ BEVER          3151	
+82nd St                       3136	
+Morris Ave                    3130	
+E 40th St                     3127	
+Dekalb Ave                    3116	
+EB QUEENS BLVD @ 71S          3113	
+ASTORIA BLVD S (E/B)          3110	
+WB W HOUSTON ST @ W           3108	
+Lafayette St                  3105	
+WB PARK AVE @ N OXFO          3100	
+W 19th St                     3097	
+E 41st St                     3089	
+Mercer St                     3067	
+E 149th St                    3063	
+38th St                       3059	
+E 87th St                     3058	
+Fresh Pond Rd                 3043	
+Lenox Ave                     3040	
+Grand Ave                     3033	
+E 38th St                     3018	
+Dean St                       3008	
+NB WILLIAMS AVE @ WO          3007	
+W 50th St                     2996	
+E 46th St                     2995	
+Greene St                     2993	
+E 43rd St                     2988	
+EB AVE N @ E 22ND ST          2981	
+W 16th St                     2972	
+41st St                       2965	
+Montague St                   2950	
+EB 65TH ST @ 16TH AV          2941	
+NB SOUTHERN BLVD @ E          2934	
+SB MIDLAND AVE @ MAS          2917	
+SB NOSTRAND AVE @ AV          2915	
+SB SOUTHERN BLVD @ E          2912	
+QUEENS BLVD (W/B) @           2910	
+NB WILLIAMSBRIDGE RD          2906	
+EB MCLAUGHLIN AVE @           2904	
+13th Ave                      2896	
+WB BRADDOCK AVE @ PO          2887	
+E 47th St                     2883	
+NB BROADWAY @ W 251S          2880	
+Valentine Ave                 2879	
+EB FT HAMILTON PKWY           2876	
+E 53rd St                     2875	
+E 28th St                     2868	
+Eastern Pky                   2867	
+QUEENS BLVD (E/B) @           2863	
+E 58th St                     2861	
+University Ave                2851	
+E 49th St                     2840	
+W 56th St                     2830	
+EB EASTERN PKWY @ WA          2828	
+EB SHORE PKWY @ OCEA          2816	
+E 116th St                    2813	
+W 25th St                     2811	
+PENNSYLVANIA AVE (S/          2800	
+W 21st St                     2799	
+W Broadway                    2796	
+Madison St                    2792	
+Kissena Blvd                  2788	
+Allen St                      2784	
+EB BOOTH MEMORIAL AV          2784	
+EB E 233RD ST @ MURD          2776	
+E 27th St                     2768	
+EB W 57TH ST @ 10TH           2754	
+WB 65TH ST @ 16TH AV          2752	
+E 21st St                     2717	
+WB QUEENS BLVD @ 51S          2710	
+Bushwick Ave                  2708	
+NB OCEAN AVE @ BAY A          2708	
+SB SHELL RD @ BOUCK           2708	
+EB E 161ST ST @ GERA          2706	
+E 11th St                     2705	
+EB QUEENS BLVD @ 55T          2701	
+W 22nd St                     2695	
+E 19th St                     2695	
+FLATBUSH AVE (N/B) @          2681	
+WILLIAMSBURG ST (S/B          2679	
+WB BEDELL ST @ 133RD          2671	
+31st Ave                      2663	
+W 116th St                    2662	
+NB FLATBUSH AVE @ E           2661	
+W 72nd St                     2651	
+E 52nd St                     2649	
+SB CONEY ISLAND AVE           2646	
+SB RALPH AVE @ E 66T          2645	
+NB ROGERS AVE @ MONT          2642	
+E 59th St                     2627	
+Bowery                        2624	
+35th Ave                      2616	
+Morris Park Ave               2614	
+WB LINCOLN AVE @ N R          2610	
+E 96th St                     2597	
+E 18th St                     2595	
+Clinton St                    2591	
+Pearl St                      2588	
+BEACH CHANNEL DR (W/          2566	
+Fort Washington Ave           2564	
+74th St                       2558	
+Pacific St                    2553	
+SB NOSTRAND AVE @ TI          2553	
+Park Ave South                2551	
+NB BROADWAY @ W 120T          2544	
+Creston Ave                   2542	
+EB QUEENS BLVD @ 63R          2541	
+E 56th St                     2538	
+EB UNION TPKE @ 210T          2531	
+WB LIBERTY AVE @ GUY          2520	
+W FORDHAM RD (W/B) @          2509	
+CADMAN PLAZA (E/B) @          2509	
+E 32nd St                     2501	
+W 55th St                     2487	
+WB ROCKLAND AVE @ SW          2484	
+EB NORTHERN BLVD @ 4          2481	
+34th Ave                      2474	
+Emmons Ave                    2472	
+E 29th St                     2470	
+EB E TREMONT AVE @ E          2469	
+W 14th St                     2464	
+E 55th St                     2457	
+Crosby St                     2454	
+Vanderbilt Ave                2453	
+164th St                      2451	
+71st Ave                      2439	
+SB UNIVERSITY AVE @           2434	
+W 15th St                     2431	
+Broome St                     2430	
+EB 65TH ST @ 11TH AV          2420	
+E 31st St                     2413	
+WB 73RD AVE @ 196TH           2395	
+E 7th St                      2389	
+SB MILL AVE @ AVE U           2385	
+McDonald Ave                  2384	
+NB KNAPP ST @ VOORHI          2384	
+WB ASTORIA BLVD @ 81          2377	
+162nd St                      2377	
+WB MERRICK BLVD @ 10          2375	
+Bergen St                     2369	
+NB BEDFORD AVE @ GAT          2354	
+Henry St                      2354	
+Union St                      2345	
+NB FLATBUSH AVE @ LI          2339	
+18th Ave                      2337	
+NB HOWARD AVE @ SUTT          2337	
+NB EASTERN PKWY @ HE          2327	
+Bell Blvd                     2322	
+BORDEN AVE (E/B) @ G          2320	
+Court St                      2318	
+NORTHERN BLVD (E/B)           2309	
+E 44th St                     2309	
+W 18th St                     2308	
+Ditmars Blvd                  2304	
+SB KISSENA BLVD @ QU          2300	
+Park Pl                       2293	
+W 20th St                     2293	
+E 84th St                     2290	
+NB AVE U @ PEARSON S          2275	
+Sanford Ave                   2270	
+SB MELROSE AVE @ E 1          2269	
+33rd St                       2268	
+Bridge St                     2265	
+E 17th St                     2261	
+E 30th St                     2260	
+Bainbridge Ave                2258	
+38th Ave                      2254	
+Elizabeth St                  2249	
+Sullivan St                   2248	
+WB E 135TH ST @ ALEX          2246	
+E 48th St                     2238	
+11th Ave                      2232	
+West St                       2230	
+SB WEBSTER AVE @ ITT          2226	
+EB W 14TH STREET @ 7          2222	
+Avenue U                      2222	
+108th St                      2218	
+EB NEPTUNE AVE @ W 5          2215	
+NB REMSEN AVE @ E 53          2215	
+Lafayette Ave                 2211	
+Remsen St                     2207	
+NB BELL BLVD @ 18TH           2207	
+SB REMSEN AVE @ FARR          2206	
+E 3rd St                      2205	
+43rd Ave                      2200	
+E 60th St                     2200	
+Church St                     2200	
+SB WATERS PL @ BRONX          2198	
+Willoughby St                 2190	
+E 4th St                      2189	
+SB BAY PKWY @ 86TH S          2187	
+E 35th St                     2180	
+NB 3RD AVE @ 41ST ST          2170	
+NB 3RD AVE @ E 112TH          2169	
+WB DITMARS BLVD @ 79          2169	
+Ludlow St                     2160	
+Sunnyside Lot                 2155	
+CROSS BRONX EXPWY (W          2151	
+Warren St                     2143	
+W 57th St                     2141	
+NB PARK AVE @ E 170T          2138	
+E 16th St                     2133	
+NB 150TH ST @ SUTTER          2121	
+37th St                       2117	
+E 50th St                     2116	
+83rd St                       2110	
+SB BROADWAY @ W 196T          2109	
+EB GRAND CENTRAL PKW          2104	
+SB SHORE RD @ 83RD S          2103	
+NB MAIN ST @ ELDER A          2101	
+80th St                       2100	
+WB E 233RD ST @ MONT          2095	
+44th St                       2088	
+NB OCEAN PKWY @ BEVE          2083	
+76th St                       2081	
+Orchard St                    2079	
+36th St                       2078	
+St Marks Ave                  2078	
+New Utrecht Ave               2076	
+WB EASTERN PKWY @ UN          2069	
+Parsons Blvd                  2068	
+E 92nd St                     2061	
+W 13th St                     2059	
+E 22nd St                     2056	
+85th St                       2055	
+EB LIBERTY AVE @ 160          2053	
+E 167th St                    2048	
+35th St                       2041	
+WB E 161ST ST @ SHER          2040	
+161st St                      2039	
+NB FATHER CAPODANNO           2033	
+NB 4TH AVE @ 13TH ST          2026	
+EB SEAVIEW AVE @ E 1          2026	
+E 138th St                    2023	
+SB KNAPP ST @ AVE V           2017	
+E 91st St                     2017	
+SB CROPSEY AVE @ BAY          2013	
+NB 4TH AVE @ E 11TH           2012	
+NB OCEAN PKWY @ SHOR          2010	
+Utica Ave                     2007	
+W 11th St                     1987	
+Franklin Ave                  1983	
+Crescent St                   1982	
+Unionport Rd                  1980	
+43rd St                       1979	
+Graham Ave                    1976	
+Union Turnpike                1972	
+W 4th St                      1971	
+W 54th St                     1969	
+WB E GUN HILL RD @ B          1968	
+GRAND CONCOURSE (N/B          1968	
+E 57th St                     1968	
+Murray St                     1955	
+NB RALPH AVE @ BERGE          1955	
+61st St                       1947	
+NB WEST END AVE @ W           1946	
+WB W 125TH ST @ ADAM          1942	
+SB BOSTON RD @ DE RE          1941	
+E 88th St                     1941	
+EB 137TH AVE @ 167TH          1939	
+WB E 177TH ST @ BRON          1938	
+W 34th St                     1937	
+W 31st St                     1931	
+Linden Blvd                   1923	
+EB RICHMOND HILL RD           1922	
+############################################################
+
+############################################################
+### PART 1.4 Colors
+
+BLACK     1078554	
+WHITE     949989	
+GREY      943680	
+UNKNOWN   272601	
+RED       194002	
+BROWN     101759	
+SILVER    88726	
+BLUE      72630	
+TAN       39942	
+YELLOW    25036	
+GREEN     16241	
+MAROON    11378	
+ORANGE    10685	
+GOLD      8667	
+LT        2608	
+DK        2220	
+PR        2113	
+WHBL      1339	
+BKGY      1263	
+PURPL     1240	
+DKG       1006	
+WHGY      777	
+DKB       562	
+BLGY      518	
+GLD       476	
+DKRD      404	
+GYBL      395	
+LTBL      369	
+LTB       319	
+LAVEN     312	
+BLW       278	
+RDGY      269	
+BGE       238	
+LTGR      224	
+DKR       209	
+GN        202	
+GYBK      194	
+DBL       194	
+BKGR      185	
+BN        172	
+RDW       169	
+WHB       161	
+BLWH      151	
+WHRD      144	
+WHGR      139	
+BLGR      137	
+BEIGE     120	
+GYRD      117	
+WHG       115	
+LTTN      106	
+BKRD      104	
+LBL       98	
+BLG       94	
+TNGY      89	
+BRZ       86	
+LTBR      85	
+GYTN      85	
+GYB       83	
+BW        80	
+RDBL      75	
+BURG      72	
+BKTN      71	
+RDBK      70	
+GYBR      67	
+BKWH      59	
+BRGY      59	
+DARK      58	
+BLRD      57	
+LTT       56	
+RDGR      56	
+RDWH      55	
+GD        55	
+GRBL      55	
+WHBK      51	
+DKBR      50	
+PLE       49	
+BLBK      48	
+ALUMI     48	
+DGR       47	
+GLGY      45	
+GRW       43	
+GRE       43	
+RDTN      42	
+LTBK      42	
+WHBR      41	
+PK        39	
+BURGU     38	
+GYWH      38	
+CRM       37	
+BKBR      34	
+BKG       34	
+BLTN      31	
+DKMR      31	
+RDRD      31	
+S         30	
+WHGL      29	
+GYGL      28	
+GRGR      27	
+LGT       26	
+BRONZ     26	
+LIGHT     24	
+CPR       23	
+XXX       21	
+GYPR      21	
+DKM       21	
+BKOR      21	
+TNGR      20	
+BRWN      20	
+DKOR      19	
+BLBR      19	
+GYH       19	
+LGR       19	
+BKGL      19	
+LTGL      19	
+SILVR     18	
+RDG       18	
+DKTN      17	
+GRA       17	
+MUL       17	
+GYG       16	
+BUR       16	
+GYT       15	
+BKPR      14	
+GYOR      14	
+WHOR      14	
+GRWH      14	
+DKGL      14	
+MRGY      14	
+TEA       13	
+A         13	
+TEAL      13	
+BIEGE     13	
+GRBK      13	
+BU        13	
+BKW       13	
+WHYW      13	
+PUR       12	
+RUST      12	
+C         12	
+BKMR      12	
+TNRD      11	
+BLB       11	
+PRGY      11	
+GLWH      11	
+BLGL      11	
+TNBL      11	
+TNTN      11	
+YWBK      11	
+GLGR      11	
+GYMR      11	
+DKPR      10	
+SI        10	
+BRBL      10	
+MRRD      10	
+COPPE     10	
+GREN      10	
+TRQ       10	
+WHM       9	
+RDBR      9	
+PURP      9	
+BRGR      9	
+RDT       9	
+BLE       8	
+BROW      8	
+Q         8	
+SLVER     8	
+GRTN      8	
+LTPR      8	
+BG        8	
+NAVY      8	
+AME       8	
+WHH       8	
+BKC       8	
+TNW       8	
+BWN       7	
+BRBR      7	
+DKP       7	
+CREAM     7	
+RDGF      7	
+BKJ       7	
+GYI       7	
+RDGL      7	
+COM       7	
+GYZ       7	
+BKHA      7	
+CHROM     7	
+BRG       7	
+TAUPE     7	
+ME        6	
+YWWH      6	
+WHN       6	
+AMETH     6	
+BKYW      6	
+SV        6	
+PRWH      6	
+GRRD      6	
+GYD       6	
+GYO       6	
+MULTI     6	
+WTE       6	
+############################################################
