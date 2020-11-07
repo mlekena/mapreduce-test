@@ -9,7 +9,7 @@ MAPPER_TWO_PATH="./kmcz_mapper_kmean.py"
 REDUCER_ONE_PATH="./kmcz_reducer.py"
 REDUCER_TWO_PATH="./kmcz_reducer_kmean.py"
 UTILS_PATH="./utils_belt.py"
-SOURCE="${MAPPER_ONE_PATH} ${MAPPER_TWO_PATH} ${REDUCER_ONE_PATH} ${REDUCER_TWO_PATH} ${UTILS_PATH}"
+SOURCE="${MAPPER_ONE_PATH},${MAPPER_TWO_PATH},${REDUCER_ONE_PATH},${REDUCER_TWO_PATH},${UTILS_PATH}"
 
 ../../start.sh
 
@@ -23,6 +23,10 @@ SOURCE="${MAPPER_ONE_PATH} ${MAPPER_TWO_PATH} ${REDUCER_ONE_PATH} ${REDUCER_TWO_
 -mapper $MAPPER_ONE_PATH -reducer $REDUCER_ONE_PATH \
 -input $IN_HADOOP_INPUT_PATH* -output $OUT_HADOOP_OUTPUT_PATH
 
+for i in {1..3}
+do 
+echo i
+done
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
 echo "############################################################" 
