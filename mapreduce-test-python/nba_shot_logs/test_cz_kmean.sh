@@ -4,12 +4,12 @@ DATA_FILE_PATH="test_data.csv"
 PROJECT_NAME="nbashotlogKMCZ"
 IN_HADOOP_INPUT_PATH="/${PROJECT_NAME}/input/"
 OUT_HADOOP_OUTPUT_PATH="/${PROJECT_NAME}/output/"
-MAPPER_ONE_PATH="./kmcz_mapper.py"
-MAPPER_TWO_PATH="./kmcz_mapper_kmean.py"
-REDUCER_ONE_PATH="./kmcz_reducer.py"
-REDUCER_TWO_PATH="./kmcz_reducer_kmean.py"
-UTILS_PATH="./utils_belt.py"
-SOURCE="${MAPPER_ONE_PATH},${MAPPER_TWO_PATH},${REDUCER_ONE_PATH},${REDUCER_TWO_PATH},${UTILS_PATH}"
+MAPPER_ONE_PATH="./app_czones/kmcz_mapper.py"
+MAPPER_TWO_PATH="./app_czones/kmcz_mapper_kmean.py"
+REDUCER_ONE_PATH="./app_czones/kmcz_reducer.py"
+REDUCER_TWO_PATH="./app_czones/kmcz_reducer_kmean.py"
+UTILS_PATH="./app_czones/utils_belt.py"
+SOURCE="./app_czones"
 
 ../../start.sh
 
