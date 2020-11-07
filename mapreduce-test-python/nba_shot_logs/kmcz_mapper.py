@@ -17,8 +17,8 @@ GAME_ID 0, MATCHUP (1), LOCATION (2), W (3), FINAL_MARGIN (4), SHOT_NUMBER (5), 
 """
 import re
 import sys
-
-Zones = [(3, 15),(3, 7),(6, 15),(6, 7)]
+# (SHOT_DISTANCE, CLOSEDEF_DIST, SHOT_CLOCK)
+Zones = [(20, 5, 15),(15, 1, 3), (10, 5, 3),(5, 5, 6)]
 OFF_SET = 1 # split creates to cells from the second column due to inner comma
 SHOTCLOCKINDEX = 8 + OFF_SET #before defender
 SHOTDISTINDEX = 11 + OFF_SET #before defender
@@ -27,7 +27,7 @@ PLAYERFIRSTINDEX = 19 + OFF_SET + 1
 # PLAYERLASTINDEX = 20
 SHOTRESULTINDEX = 13 + OFF_SET #before defender
 EMPTY_FIELD = ""
-# c = 5
+
 def main():
     for line in sys.stdin:
         line.strip()
@@ -36,11 +36,9 @@ def main():
             continue
         if len(sline) != 23:
             continue
-        # print(" # ".join(sline))
-        # print(len(sline))
+
         selected_fields = [sline[PLAYERFIRSTINDEX], sline[SHOTDISTINDEX],
-                                        sline[CLOSEDEFDISTINDEX], sline[SHOTCLOCKINDEX],
-                                        sline[SHOTRESULTINDEX]]
+                                        sline[CLOSEDEFDISTINDEX], sline[SHOTCLOCKINDEX]]
         """Here we have made a decision to invalidate any row with missing data."""
         skip_row = False
         for field in selected_fields:
@@ -51,10 +49,7 @@ def main():
         if skip_row:
             continue
 
-        print("{};{};{};{}\t{}".format(*selected_fields))
+        print("{}\t{};{};{}".format(*selected_fields))
 
 if __name__ == "__main__":
     main()
-    # if c < 0:
-    #     break
-    # c -= 1
