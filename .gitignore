@@ -3,3 +3,4 @@ manager
 .vscode
 .venv
 uncommitted_data
+__pycache__
