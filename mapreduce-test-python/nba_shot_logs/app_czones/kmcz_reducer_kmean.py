@@ -11,6 +11,7 @@ import re
 import sys
 from functools import reduce
 import math
+# https://stackoverflow.com/a/18207652
 from util_belt import sum_arrays, to_numbers, centroid_to_string
 
 

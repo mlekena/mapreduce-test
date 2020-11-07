@@ -24,7 +24,7 @@ SOURCE="${MAPPER_ONE_PATH},${MAPPER_TWO_PATH},${REDUCER_ONE_PATH},${REDUCER_TWO_
 -input $IN_HADOOP_INPUT_PATH* -output $OUT_HADOOP_OUTPUT_PATH
 
 for i in {1..3}
-do 
+do
 echo i
 done
 
