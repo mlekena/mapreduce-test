@@ -27,20 +27,22 @@ $HDFS dfs -ls $IN_HADOOP_INPUT_PATH
 $HDFS dfs -rm -r $IN_HADOOP_INPUT_PATH
 TEMP_INPUT=$OUT_HADOOP_OUTPUT_PATH
 
-N=2
-for counter in {1..$N}
-do
+START=1
+END=2
+IDX=$START
+while [ $IDX -le $END]; do
     if [[ "$HDFS dfs -f $TEMP_INPUT/_SUCCESS" ]] ; then 
        $HDFS dfs -rm $TEMP_INPUT/_SUCCESS
        /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
        -files $SOURCE \
        -mapper $MAPPER_TWO_PATH -reducer $REDUCER_TWO_PATH \
-       -input $TEMP_INPUT* -output "${OUT_HADOOP_OUTPUT_PATH}$counter/"
+       -input $TEMP_INPUT* -output "${OUT_HADOOP_OUTPUT_PATH}$IDX/"
     # $HDFS dfs -rm -r $TEMP_INPUT
-    TEMP_INPUT="${OUT_HADOOP_OUTPUT_PATH}$counter/"
+    TEMP_INPUT="${OUT_HADOOP_OUTPUT_PATH}$IDX/"
     else
        break
     fi
+    IDX=$(($IDX+1))
 done
 
 if [[ "$HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS" ]] ; then
@@ -49,9 +51,11 @@ if [[ "$HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS" ]] ; then
 fi 
 
     # $HDFS dfs -cat "${OUT_HADOOP_OUTPUT_PATH}$COUNT/part-00000"
-for COUNT in {1..$N}
+IDX=$START
+while [ $IDX -le $END]; do
 do
-    $HDFS dfs -rm -r "${OUT_HADOOP_OUTPUT_PATH}$COUNT/"
+    $HDFS dfs -rm -r "${OUT_HADOOP_OUTPUT_PATH}$IDX/"
+    IDX=$(($IDX+1))
 done
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
