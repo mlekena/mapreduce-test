@@ -3,11 +3,12 @@
 
 """
 input type to output type
-<<PLAYER, SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>, HIT_RATE> --> <PLAYER, <PLAYER, SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>> where 
+<<PLAYER>, <SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>> --> 
+    <<PLAYER, <SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>, {4}<SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>> where 
 fear_factor = missed_shots/total_shot_attempts
+
 @author Theko Lekena, Suzanne Zhen, Dylan Smith
 
-get hat data -> compute per player stats clunster =>* compute tuple closest too -> compute new tuples by group-> repeat*
 """
 import re
 import sys

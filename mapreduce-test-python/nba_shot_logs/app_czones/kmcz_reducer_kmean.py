@@ -3,7 +3,7 @@
 
 """
 
-<player_data, nearest_k_group_number> --> <<player_data, new_k_means_group_centroids>
+<<PLAYER, SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>, CLUSTER_GROUP> -->  <<PLAYER, <SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>, {4}<SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>> 
 
 @author Theko Lekena, Suzanne Zhen, Dylan Smith
 """

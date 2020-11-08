@@ -12,21 +12,22 @@ GAME_ID 0, MATCHUP (1), LOCATION (2), W (3), FINAL_MARGIN (4), SHOT_NUMBER (5), 
 21400899,"MAR 04, 2015 - CHA @ BKN",A,W,24,1,1,1:09,+10.8,2,1.9,++7.7,2,+made,"Anderson, Alan",101187,++1.3,1,2,++brian roberts,203148
 
 
-<All the data> --> <<PLAYER, SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>, HIT_RATE>
+<All the data> --> <<PLAYER>, <SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>>
 @author Theko Lekena, Suzanne Zhen, Dylan Smith
 """
 import re
 import sys
 # (SHOT_DISTANCE, CLOSEDEF_DIST, SHOT_CLOCK)
-Zones = [(20, 5, 15),(15, 1, 3), (10, 5, 3),(5, 5, 6)]
-OFF_SET = 1 # split creates to cells from the second column due to inner comma
-SHOTCLOCKINDEX = 8 + OFF_SET #before defender
-SHOTDISTINDEX = 11 + OFF_SET #before defender
+Zones = [(20, 5, 15), (15, 1, 3), (10, 5, 3), (5, 5, 6)]
+OFF_SET = 1  # split creates to cells from the second column due to inner comma
+SHOTCLOCKINDEX = 8 + OFF_SET  # before defender
+SHOTDISTINDEX = 11 + OFF_SET  # before defender
 CLOSEDEFDISTINDEX = 16 + OFF_SET + 1
 PLAYERFIRSTINDEX = 19 + OFF_SET + 1
 # PLAYERLASTINDEX = 20
-SHOTRESULTINDEX = 13 + OFF_SET #before defender
+SHOTRESULTINDEX = 13 + OFF_SET  # before defender
 EMPTY_FIELD = ""
+
 
 def main():
     for line in sys.stdin:
@@ -38,7 +39,7 @@ def main():
             continue
 
         selected_fields = [sline[PLAYERFIRSTINDEX], sline[SHOTDISTINDEX],
-                                        sline[CLOSEDEFDISTINDEX], sline[SHOTCLOCKINDEX]]
+                           sline[CLOSEDEFDISTINDEX], sline[SHOTCLOCKINDEX]]
         """Here we have made a decision to invalidate any row with missing data."""
         skip_row = False
         for field in selected_fields:
@@ -49,7 +50,9 @@ def main():
         if skip_row:
             continue
 
-        print("{}\t{};{};{}".format(*selected_fields))
+        if (sline[SHOTRESULTINDEX] == "made"):
+            print("{}\t{};{};{}".format(*selected_fields))
+
 
 if __name__ == "__main__":
     main()

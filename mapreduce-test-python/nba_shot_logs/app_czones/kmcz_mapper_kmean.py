@@ -2,7 +2,7 @@
 # --*-- coding:utf-8 --*--
 
 """
-<All the data> --> <<PLAYER, SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>, HIT_RATE>
+<<PLAYER, <SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>, {4}<SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>> --> <<PLAYER, SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>, CLUSTER_GROUP>
 @author Theko Lekena, Suzanne Zhen, Dylan Smith
 """
 import re

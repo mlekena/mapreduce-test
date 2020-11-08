@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Running NBA Shot Log Analysis : Fear Score"
-DATA_FILE_PATH="test_data.csv"
+DATA_FILE_PATH="uncommitted_data/shot_log.csv"
 PROJECT_NAME="nbashotlog"
 IN_HADOOP_INPUT_PATH="/${PROJECT_NAME}/input/"
 OUT_HADOOP_OUTPUT_PATH="/${PROJECT_NAME}/output/"

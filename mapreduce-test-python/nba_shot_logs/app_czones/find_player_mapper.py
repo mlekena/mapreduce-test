@@ -2,7 +2,7 @@
 # --*-- coding:utf-8 --*--
 
 """
-<<PLAYER, SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>, HIT_RATE> --> <<PLAYER>, <ZONES>>
+<<PLAYER, <SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>, {4}<SHOT_DIST, CLOSE_DEF_DIST, SHOT_CLOCK>> --> <<PLAYER>, <ZONES>>
 @author Theko Lekena, Suzanne Zhen, Dylan Smith
 """
 import sys
