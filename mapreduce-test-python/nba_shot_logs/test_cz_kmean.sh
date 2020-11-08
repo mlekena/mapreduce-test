@@ -48,11 +48,11 @@ if [ "$HDFS" dfs -test -f "${TEMP_INPUT}"_SUCCESS ] ; then
     $HDFS dfs -cat ${TEMP_INPUT}part-00000
 fi 
 
-for count in {1..$N}
+    # $HDFS dfs -cat "${OUT_HADOOP_OUTPUT_PATH}$COUNT/part-00000"
+for COUNT in {1..$N}
 do
-    $HDFS dfs -cat "${TEMP_INPUT}$COUNT"
+    $HDFS dfs -rm -r "${OUT_HADOOP_OUTPUT_PATH}$COUNT/"
 done
-$HDFS dfs -rm -r $TEMP_INPUT
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
 echo "############################################################" 
