@@ -9,6 +9,8 @@ MAPPER_TWO_PATH="./app_czones/kmcz_mapper_kmean.py"
 REDUCER_ONE_PATH="./app_czones/kmcz_reducer.py"
 REDUCER_TWO_PATH="./app_czones/kmcz_reducer_kmean.py"
 UTILS_PATH="./app_czones/utils_belt.py"
+MAPPER_THREE_PATH="./app_czones/find_player_mapper.py"
+REDUCER_THREE_PATH="./app_czones/find_player_reducer.py"
 SOURCE="./app_czones"
 
 HDFS="/usr/local/hadoop/bin/hdfs"
@@ -46,16 +48,23 @@ while [ $IDX -le $END ]; do
 done
 
 if [[ "$HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS" ]] ; then
-    echo "DROPPING OUTPUT TO LOCAL DISK"
-    $HDFS dfs -cat ${TEMP_INPUT}part-00000
+    echo "Gathering Players of interest..."
+    $HDFS dfs -rm $TEMP_INPUT/_SUCCESS
+    RESULTS_OUTPUT="${OUT_HADOOP_OUTPUT_PATH}/result/"
+    /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
+    -files $SOURCE \
+    -mapper $MAPPER_THREE_PATH -reducer $REDUCER_THREE_PATH \
+    -input $TEMP_INPUT* -output ${RESULTS_OUTPUT}
+    $HDFS dfs -cat ${RESULTS_OUTPUT}part-00000
 fi 
 
     # $HDFS dfs -cat "${OUT_HADOOP_OUTPUT_PATH}$COUNT/part-00000"
-IDX=$START
-while [ $IDX -le $END ]; do
-    $HDFS dfs -rm -r "${OUT_HADOOP_OUTPUT_PATH}$IDX/"
-    IDX=$(($IDX+1))
-done
+# IDX=$START
+# while [ $IDX -le $END ]; do
+#     $HDFS dfs -rm -r "${OUT_HADOOP_OUTPUT_PATH}$IDX/"
+#     IDX=$(($IDX+1))
+# done
+    $HDFS dfs -rm -rf "${OUT_HADOOP_OUTPUT_PATH}"
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
 echo "############################################################" 
