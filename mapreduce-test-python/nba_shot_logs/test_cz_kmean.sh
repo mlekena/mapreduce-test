@@ -44,6 +44,7 @@ if [ ! $HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS]; then
     echo "DROPPING OUTPUT TO LOCAL DISK"
     $HDFSdfs -cat ${TEMP_INPUT}part-00000
 fi 
+$HDFS dfs -rm -r $TEMP_INPUT
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
 echo "############################################################" 
