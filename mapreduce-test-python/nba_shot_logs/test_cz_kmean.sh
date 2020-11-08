@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "Running NBA Shot Log Analysis"
 DATA_FILE_PATH="test_data.csv"
 PROJECT_NAME="nbashotlogKMCZ"
@@ -30,20 +30,20 @@ TEMP_INPUT=$OUT_HADOOP_OUTPUT_PATH
 N=2
 for counter in {1..$N}
 do
-    if [ "$HDFS" dfs -test -f "$TEMP_INPUT/_SUCCESS" ] ; then 
+    if [[ "$HDFS dfs -f $TEMP_INPUT/_SUCCESS" ]] ; then 
        $HDFS dfs -rm $TEMP_INPUT/_SUCCESS
        /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
        -files $SOURCE \
        -mapper $MAPPER_TWO_PATH -reducer $REDUCER_TWO_PATH \
-       -input $TEMP_INPUT* -output "${OUT_HADOOP_OUTPUT_PATH}$i/"
+       -input $TEMP_INPUT* -output "${OUT_HADOOP_OUTPUT_PATH}$counter/"
     # $HDFS dfs -rm -r $TEMP_INPUT
-    TEMP_INPUT="${OUT_HADOOP_OUTPUT_PATH}$i/"
+    TEMP_INPUT="${OUT_HADOOP_OUTPUT_PATH}$counter/"
     else
        break
     fi
 done
 
-if [ "$HDFS" dfs -test -f "${TEMP_INPUT}"_SUCCESS ] ; then
+if [[ "$HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS" ]] ; then
     echo "DROPPING OUTPUT TO LOCAL DISK"
     $HDFS dfs -cat ${TEMP_INPUT}part-00000
 fi 
@@ -56,7 +56,7 @@ done
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
 echo "############################################################" 
-/usr/local/hadoop/bin/hdfs dfs -cat ${OUT_HADOOP_OUTPUT_PATH}part-00000
+#/usr/local/hadoop/bin/hdfs dfs -cat ${OUT_HADOOP_OUTPUT_PATH}part-00000
 # echo "This player the above fear score of "shots_made_near"/"total_shots_made_near"
 echo "############################################################" 
 echo "PRINTING THE FILES"
