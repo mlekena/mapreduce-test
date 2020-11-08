@@ -24,16 +24,19 @@ $HDFS dfs -ls $IN_HADOOP_INPUT_PATH
 -mapper $MAPPER_ONE_PATH -reducer $REDUCER_ONE_PATH \
 -input $IN_HADOOP_INPUT_PATH* -output $OUT_HADOOP_OUTPUT_PATH
 
-for i in {1}
+$HDFS dfs -rm -r $IN_HADOOP_INPUT_PATH
+TEMP_INPUT=$OUT_HADOOP_OUTPUT_PATH
+for counter in {1}
 do
-    if [ ! $HDFS dfs -test -f $OUT_HADOOP_OUTPUT_PATH/_SUCCESS ]; then 
+    if [ ! $HDFS dfs -test -f $TEMP_INPUT/_SUCCESS ]; then 
       break
     fi
-    $HDFS dfs -rm $OUT_HADOOP_OUTPUT_PATH/_SUCCESS
+    $HDFS dfs -rm $TEMP_INPUT/_SUCCESS
     /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
     -files $SOURCE \
     -mapper $MAPPER_TWO_PATH -reducer $REDUCER_TWO_PATH \
-    -input $OUT_HADOOP_OUTPUT_PATH* -output $OUT_HADOOP_OUTPUT_PATH
+    -input $TEMP_INPUT* -output ${OUT_HADOOP_OUTPUT_PATH}i
+    TEMP_INPUT=${OUT_HADOOP_OUTPUT_PATH}i
 done
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
