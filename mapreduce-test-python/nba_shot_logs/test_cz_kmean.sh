@@ -30,7 +30,7 @@ TEMP_INPUT=$OUT_HADOOP_OUTPUT_PATH
 N=2
 for counter in {1..$N}
 do
-    if [ ! $HDFS dfs -test -f $TEMP_INPUT/_SUCCESS ]; then 
+    if [[ ! $HDFS dfs -test -f $TEMP_INPUT/_SUCCESS ]] ; then 
       break
     fi
     $HDFS dfs -rm $TEMP_INPUT/_SUCCESS
@@ -42,7 +42,7 @@ do
     TEMP_INPUT=${OUT_HADOOP_OUTPUT_PATH}$i/
 done
 
-if [ ! $HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS]; then
+if [[] ! $HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS ]] ; then
     echo "DROPPING OUTPUT TO LOCAL DISK"
     $HDFS dfs -cat ${TEMP_INPUT}part-00000
 fi 
