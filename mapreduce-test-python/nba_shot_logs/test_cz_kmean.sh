@@ -37,19 +37,19 @@ do
     /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
     -files $SOURCE \
     -mapper $MAPPER_TWO_PATH -reducer $REDUCER_TWO_PATH \
-    -input $TEMP_INPUT* -output ${OUT_HADOOP_OUTPUT_PATH}$i/
+    -input $TEMP_INPUT* -output "${OUT_HADOOP_OUTPUT_PATH}$i/"
     # $HDFS dfs -rm -r $TEMP_INPUT
-    TEMP_INPUT=${OUT_HADOOP_OUTPUT_PATH}$i/
+    TEMP_INPUT="${OUT_HADOOP_OUTPUT_PATH}$i/"
 done
 
-if [[] ! $HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS ]] ; then
+if [[ ! $HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS ]] ; then
     echo "DROPPING OUTPUT TO LOCAL DISK"
     $HDFS dfs -cat ${TEMP_INPUT}part-00000
 fi 
 
 for count in {1..$N}
 do
-    $HDFS dfs -cat ${TEMP_INPUT}$COUNT
+    $HDFS dfs -cat "${TEMP_INPUT}$COUNT"
 done
 $HDFS dfs -rm -r $TEMP_INPUT
 
