@@ -30,7 +30,7 @@ TEMP_INPUT=$OUT_HADOOP_OUTPUT_PATH
 START=1
 END=2
 IDX=$START
-while [ $IDX -le $END]; do
+while [ $IDX -le $END ]; do
     if [[ "$HDFS dfs -f $TEMP_INPUT/_SUCCESS" ]] ; then 
        $HDFS dfs -rm $TEMP_INPUT/_SUCCESS
        /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
@@ -52,8 +52,7 @@ fi
 
     # $HDFS dfs -cat "${OUT_HADOOP_OUTPUT_PATH}$COUNT/part-00000"
 IDX=$START
-while [ $IDX -le $END]; do
-do
+while [ $IDX -le $END ]; do
     $HDFS dfs -rm -r "${OUT_HADOOP_OUTPUT_PATH}$IDX/"
     IDX=$(($IDX+1))
 done
