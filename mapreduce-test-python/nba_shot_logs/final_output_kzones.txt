@@ -1,0 +1,5 @@
+chris paul:     30.900;     4.600;     0.800
+cody zeller:     10.400;     3.400;     4.400
+james harden:     29.000;     4.200;    14.700
+lebron james:      5.800;     7.500;    20.600
+stephen curry:     30.300;     3.800;    22.700

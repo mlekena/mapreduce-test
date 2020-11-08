@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Running NBA Shot Log Analysis"
-DATA_FILE_PATH="test_data.csv"
+#DATA_FILE_PATH="test_data.csv"
+DATA_FILE_PATH="uncommitted_data/shot_logs.csv"
 PROJECT_NAME="nbashotlogKMCZ"
 IN_HADOOP_INPUT_PATH="/${PROJECT_NAME}/input/"
 OUT_HADOOP_OUTPUT_PATH="/${PROJECT_NAME}/output/"
@@ -64,7 +65,7 @@ fi
 #     $HDFS dfs -rm -r "${OUT_HADOOP_OUTPUT_PATH}$IDX/"
 #     IDX=$(($IDX+1))
 # done
-    $HDFS dfs -rm -rf "${OUT_HADOOP_OUTPUT_PATH}"
+    $HDFS dfs -rm -r -f "${OUT_HADOOP_OUTPUT_PATH}"
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
 echo "############################################################" 
