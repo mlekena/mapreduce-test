@@ -1,11 +1,11 @@
-#!/bin/sh
-echo "Running NBA Shot Log Analysis"
+#!/bin/bash
+echo "Running NBA Shot Log Analysis : Fear Score"
 DATA_FILE_PATH="test_data.csv"
 PROJECT_NAME="nbashotlog"
 IN_HADOOP_INPUT_PATH="/${PROJECT_NAME}/input/"
 OUT_HADOOP_OUTPUT_PATH="/${PROJECT_NAME}/output/"
-MAPPER_ONE_PATH="./mapper.py"
-REDUCER_ONE_PATH="./reducer.py"
+MAPPER_ONE_PATH="./fear_score_mapper.py"
+REDUCER_ONE_PATH="./fear_score_reducer.py"
 
 ../../start.sh
 /usr/local/hadoop/bin/hdfs dfs -rm -r $IN_HADOOP_INPUT_PATH
@@ -23,7 +23,6 @@ echo "############################################################"
 /usr/local/hadoop/bin/hdfs dfs -cat ${OUT_HADOOP_OUTPUT_PATH}part-00000
 echo "This player the above fear score of \"shots_made_near/total_shots_made_near\""
 echo "############################################################" 
-echo "PRINTING THE FILES"
 /usr/local/hadoop/bin/hdfs dfs -rm -r $IN_HADOOP_INPUT_PATH
 /usr/local/hadoop/bin/hdfs dfs -rm -r ${OUT_HADOOP_OUTPUT_PATH}
 ../../stop.sh
