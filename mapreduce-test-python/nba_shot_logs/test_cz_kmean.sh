@@ -26,7 +26,9 @@ $HDFS dfs -ls $IN_HADOOP_INPUT_PATH
 
 $HDFS dfs -rm -r $IN_HADOOP_INPUT_PATH
 TEMP_INPUT=$OUT_HADOOP_OUTPUT_PATH
-for counter in {1..2}
+
+N=2
+for counter in {1..$N}
 do
     if [ ! $HDFS dfs -test -f $TEMP_INPUT/_SUCCESS ]; then 
       break
@@ -36,14 +38,19 @@ do
     -files $SOURCE \
     -mapper $MAPPER_TWO_PATH -reducer $REDUCER_TWO_PATH \
     -input $TEMP_INPUT* -output ${OUT_HADOOP_OUTPUT_PATH}$i/
-    $HDFS dfs -rm -r $TEMP_INPUT
+    # $HDFS dfs -rm -r $TEMP_INPUT
     TEMP_INPUT=${OUT_HADOOP_OUTPUT_PATH}$i/
 done
 
 if [ ! $HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS]; then
     echo "DROPPING OUTPUT TO LOCAL DISK"
-    $HDFSdfs -cat ${TEMP_INPUT}part-00000
+    $HDFS dfs -cat ${TEMP_INPUT}part-00000
 fi 
+
+for count in {1..$N}
+do
+    $HDFS dfs -cat ${TEMP_INPUT}$COUNT
+done
 $HDFS dfs -rm -r $TEMP_INPUT
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
