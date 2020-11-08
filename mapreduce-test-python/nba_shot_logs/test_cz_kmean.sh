@@ -26,7 +26,7 @@ $HDFS dfs -ls $IN_HADOOP_INPUT_PATH
 
 $HDFS dfs -rm -r $IN_HADOOP_INPUT_PATH
 TEMP_INPUT=$OUT_HADOOP_OUTPUT_PATH
-for counter in {1}
+for counter in {1..2}
 do
     if [ ! $HDFS dfs -test -f $TEMP_INPUT/_SUCCESS ]; then 
       break
@@ -35,9 +35,15 @@ do
     /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
     -files $SOURCE \
     -mapper $MAPPER_TWO_PATH -reducer $REDUCER_TWO_PATH \
-    -input $TEMP_INPUT* -output ${OUT_HADOOP_OUTPUT_PATH}i
-    TEMP_INPUT=${OUT_HADOOP_OUTPUT_PATH}i
+    -input $TEMP_INPUT* -output ${OUT_HADOOP_OUTPUT_PATH}$i/
+    $HDFS dfs -rm -r $TEMP_INPUT
+    TEMP_INPUT=${OUT_HADOOP_OUTPUT_PATH}$i/
 done
+
+if [ ! $HDFS dfs -test -f ${TEMP_INPUT}_SUCCESS]; then
+    echo "DROPPING OUTPUT TO LOCAL DISK"
+    $HDFSdfs -cat ${TEMP_INPUT}part-00000
+fi 
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
 echo "############################################################" 
