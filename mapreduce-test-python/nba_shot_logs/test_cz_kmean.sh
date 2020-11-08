@@ -11,21 +11,29 @@ REDUCER_TWO_PATH="./app_czones/kmcz_reducer_kmean.py"
 UTILS_PATH="./app_czones/utils_belt.py"
 SOURCE="./app_czones"
 
+HDFS="/usr/local/hadoop/bin/hdfs"
 ../../start.sh
 
-/usr/local/hadoop/bin/hdfs dfs -rm -r $IN_HADOOP_INPUT_PATH
-/usr/local/hadoop/bin/hdfs dfs -rm -r $OUT_HADOOP_OUTPUT_PATH
-/usr/local/hadoop/bin/hdfs dfs -mkdir -p $IN_HADOOP_INPUT_PATH
-/usr/local/hadoop/bin/hdfs dfs -copyFromLocal $DATA_FILE_PATH $IN_HADOOP_INPUT_PATH
-/usr/local/hadoop/bin/hdfs dfs -ls $IN_HADOOP_INPUT_PATH
+$HDFS dfs -rm -r $IN_HADOOP_INPUT_PATH
+$HDFS dfs -rm -r $OUT_HADOOP_OUTPUT_PATH
+$HDFS dfs -mkdir -p $IN_HADOOP_INPUT_PATH
+$HDFS dfs -copyFromLocal $DATA_FILE_PATH $IN_HADOOP_INPUT_PATH
+$HDFS dfs -ls $IN_HADOOP_INPUT_PATH
 /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
 -files $SOURCE \
 -mapper $MAPPER_ONE_PATH -reducer $REDUCER_ONE_PATH \
 -input $IN_HADOOP_INPUT_PATH* -output $OUT_HADOOP_OUTPUT_PATH
 
-for i in {1..3}
+for i in {1}
 do
-echo i
+    if [ ! $HDFS dfs -test -f $OUT_HADOOP_OUTPUT_PATH/_SUCCESS ]; then 
+      break
+    fi
+    $HDFS dfs -rm $OUT_HADOOP_OUTPUT_PATH/_SUCCESS
+    /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
+    -files $SOURCE \
+    -mapper $MAPPER_TWO_PATH -reducer $REDUCER_TWO_PATH \
+    -input $OUT_HADOOP_OUTPUT_PATH* -output $OUT_HADOOP_OUTPUT_PATH
 done
 
 /usr/local/hadoop/bin/hdfs dfs -ls $OUT_HADOOP_OUTPUT_PATH
